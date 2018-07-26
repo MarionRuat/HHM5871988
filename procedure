@@ -1,0 +1,32 @@
+dossier back
+npm init => packahe json 
+mkdir route cd route npm install express => créeation des modules
+à la racine => fichier app.js qui est le point d'entrée
+
+copier ça : 
+
+const express = require('express')
+const app = express()
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+
+// dans le cas d'une route non trouvée, je retourne le code 404 'Not Found'
+app.use(function(req, res, next) {
+  var  err  =  new  Error('Not Found');
+  err.status  =  404;
+  next(err);
+});
+
+//je lance le serveur node
+let  server  =  app.listen( process.env.PORT  ||  3000, function(){
+  console.log('Listening on port '  +  server.address().port);
+});
+
+
+
+Lier la base de données : 
+
+
+
