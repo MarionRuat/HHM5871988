@@ -1,0 +1,50 @@
+//https://developer.mozilla.org/fr/Apprendre/JavaScript/Client-side_web_APIs/Third_party_APIs
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Google Maps example customized</title>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb5AOgg1NQhG5Xm2wxE9d5_7QxSItxEik&callback=initMap"></script>
+    <script>
+    if("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+        var myOptions = {
+          zoom: 8,
+          center: latlng,
+          mapTypeId: google.maps.MapTypeId.TERRAIN,
+          disableDefaultUI: true,
+          zoomControl: true,
+mapTypeControl: true,
+scaleControl: true,
+        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+          var marker = new google.maps.Marker({
+        position: latlng,
+        icon: iconBase + 'flag_maps.png',
+        map: map
+      });
+
+        
+      });
+    } else {
+      var para = document.createElement('p');
+      para.textContent = 'Argh, no geolocation!';
+      document.body.appendChild(para);
+    }
+    </script>
+    <style>
+      #map_canvas {
+        width: 600px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Customized maps example</h1>
+    <div id="map_canvas"></div>
+  </body>
+</html>
