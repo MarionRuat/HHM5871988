@@ -1,0 +1,127 @@
+{
+  "title": "Matchs",
+  "description": "Liste des matchs",
+  "games": [
+    {
+      "gameDateTime": "2018-07-04 17:30:00",
+      "city": "Le palais royal",
+      "country": "France",
+      "adressLanguage": "2 rue Gutenberg, 75001 Paris",
+      "players": 1,
+      "playersRequest": 3,
+      "playersInvited": 2,
+      "teamName": "Paname central",
+      "firstName": "Marc",
+      "position": "ailier",
+      "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png",
+      "lastConnection": "2018-07-04 17:30:00",
+      "access": "ouvert",
+      "friend": 1,
+      "teamMate": 1,
+      "friendsNumber": 8,
+      "otherPlayers": [
+        {"firstname": "Frank", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Jules", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Michael", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Tom", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Gigi", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78}
+      ]
+    },
+    {
+      "gameDateTime": "2018-07-17 19:00:00",
+      "city": "Paris 18ème",
+      "country": "France",
+      "adressLanguage": "10 rue Feutrier, 75018 Paris",
+      "players": 1,
+      "playersRequest": 7,
+      "playersInvited": 2,
+      "teamName": "Les dunkers de Montmartre",
+      "firstName": "Cyril",
+      "position": "ailier",
+      "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png",
+      "lastConnection": "2018-07-04 17:30:00",
+      "access": "ouvert",
+      "friend": 1,
+      "teamMate": 0,
+      "friendsNumber": 11,
+      "otherPlayers": [
+        {"firstname": "Frank", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Marc", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Ludwig", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Cyril", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78}
+      ]
+    },
+    {
+      "gameDateTime": "2018-07-24 17:30:00",
+      "city": "Paris 15ème",
+      "country": "France",
+      "adressLanguage": "265 rue Vaugirard, 75015 Paris",
+      "players": 1,
+      "playersRequest": 3,
+      "playersInvited": 9,
+      "teamName": "Ici c'est Paris Sud",
+      "firstName": "Stéphane",
+      "position": "pivot",
+      "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png",
+      "lastConnection": "2018-07-04 17:30:00",
+      "access": "fermé",
+      "friend": 1,
+      "teamMate": 1,
+      "friendsNumber": 15,
+      "otherPlayers": [
+        {"firstname": "Dimitri", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Kevin", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78}
+      ]
+    },
+    {
+      "gameDateTime": "2018-08-09 16:30:00",
+      "city": "Paris 13ème",
+      "country": "France",
+      "adressLanguage": "68 avenue d'Ivry, 75013 Paris",
+      "players": 1,
+      "playersRequest": 3,
+      "playersInvited": 12,
+      "teamName": "Les triades du 13ème",
+      "firstName": "Maylis",
+      "position": "pivot",
+      "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png",
+      "lastConnection": "2018-07-04 17:30:00",
+      "access": "fermé",
+      "friend": 1,
+      "teamMate": 0,
+      "friendsNumber": 9,
+      "otherPlayers": [
+        {"firstname": "Arron", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Julien", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Lucien", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Pierrick", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Cédric", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78}
+      ]
+    },
+    {
+      "gameDateTime": "2018-08-22 15:30:00",
+      "city": "Paris 18ème",
+      "country": "France",
+      "adressLanguage": "22 rue de Clignancourt, 75018 Paris",
+      "players": 1,
+      "playersRequest": 1,
+      "playersInvited": 2,
+      "teamName": "Bitume for ever",
+      "firstName": "Alexandre",
+      "position": "ailier",
+      "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png",
+      "lastConnection": "2018-07-04 17:30:00",
+      "access": "ouvert",
+      "friend": 1,
+      "teamMate": 0,
+      "friendsNumber": 5,
+      "otherPlayers": [
+        {"firstname": "Frank", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Jules", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Michael", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Tom", "position": "ailier", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78},
+        {"firstname": "Gigi", "position": "pivot", "photo": "https://raw.githubusercontent.com/cyrilBlondeau/wild-project/master/avatar.png", "lastConnection": "2018-07-04 17:30:00", "friend": 0, "teamMate": 1, "friendsNumber": 78}
+      ]
+    },
+  ]
+}

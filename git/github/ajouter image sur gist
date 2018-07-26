@@ -1,0 +1,26 @@
+How to add an image to a gist
+
+    Create or find a gist that you own.
+
+    Clone your gist (replace <hash> with your gist's hash):
+
+    # with ssh
+    git clone git@gist.github.com:<hash>.git mygist
+
+    # with https
+    git clone https://gist.github.com/<hash>.git mygist
+
+    Change to your gist’s directory:
+
+    cd mygist
+
+    Add and commit the image:
+
+    git add tulip.jpg
+    git commit -m "Add tulip to gist"
+
+    Update remote:
+
+    git push origin master
+
+

@@ -1,0 +1,31 @@
+react
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+
+Gestion de l'état : => state. A chaque fois que l'atat state est appelé il se mettra à jour.
+
+Initialiser l'état start : appeler la fonction super() dans le constructeur de la classe. La fonction super permet d'aller chercher les différents éléments de la classe component.
+
+Repose sur un DOM virtuel. Qui n'est pas nécessairement rendu à chaque fois. 
+
+
+Un class va créer un objet. le render est une fonction qui retourne un DOM. 
+
+un composant est composé de props de states et un cycle de vie. 
+
+PROPS et States sont des JSON avec des clés valeurs. 
+
+PROPS des propriétés intrinsèques d'un composant, immutable.
+
+States => est mobile, c'est mobile. Chaque modification d'un état fait une MAJ de la vue. 
+
+Les props : on récupère les propriétés 
+
+JSX intégration du DOM en JS.
+
+
+
+

@@ -1,0 +1,24 @@
+mdp 
+
+mysql : jecode4wcs
+
+gitHub : MarionRuat
+HHM587mar
+
+
+
+En utilisant le terminal
+
+Connexion classique
+mysql -u root -p
+
+Connexion a une base de données déjà existante
+mysql -u root -D database -p
+
+Pour importer un fichier SQL myDump.sql
+mysql -u root -D database -p < myDump.sql
+
+
+Exporter une BDD en .sql
+
+mysqldump -u root -p --databases Gestion > Gestion.sql	

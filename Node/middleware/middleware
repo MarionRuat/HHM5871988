@@ -1,0 +1,57 @@
+Middleware niveau application ou niveau routeur. 
+
+Soit un middleware pour toute l'application => app.js
+
+
+var app = express();
+
+app.use(function (req, res, next) {
+  console.log('Time:', Date.now());
+  next();
+});
+
+
+ou Middleware sur la route. Rajouter une étape sur l'appel d'une route pour faire une vérification par exemple ( ex : une personne est bien connectée)
+
+var router = express.Router();
+
+
+router.get('/', (req, res, next) => {
+    if(isConnected()){ // fonction fictive pour vérifier si la personne est connectée
+        return next(); // Permet de passer à la fonction suivante
+    } else {
+        return res.redirect('/login'); // redirige l'utilisateur sans passer dans la fonction suivante
+    }
+}, (req, res, next) => {
+    res.render('monAdmin');
+});
+
+exemple de l'exercice : 
+
+router.get('/superMiddleware',function(req,res,next){
+	console.log('Hello Middleware');
+	next();
+},function (req,res,next){
+	res.send('Hello World');
+});
+
+Express est une infrastructure web middleware et de routage. Les fonctions de middleware sont des fonctions qui peuvent accéder à l’objet Request (req), l’objet response (res) et à la fonction middleware suivant dans le cycle demande-réponse de l’application.
+middleware est une fonction. Elle peut accéder à l'objet Request (req) et l'objet response(res). Cette fonctoin est désognée par une variable nommée next.
+
+La fonction va : executer le code, apporter des modifs aux objets de demandes et réponse.
+Termine le cycle de demande réponse.
+Appele les fonctions middleware suivante.
+
+Si la fonction middleware en cours ne termine pas le cycle de demande-réponse, elle doit appeler la fonction next() pour transmettre le contrôle à la fonction middleware suivant. Sinon, la demande restera bloquée.
+
+
+
+
+
+
+
+
+
+app.get
+
+

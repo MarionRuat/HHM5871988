@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Do you like potatoes ? </title>
+</head>
+
+<body>
+    <script>
+var reponse = String(prompt ("Aimez vous les pommes de terres ?"));
+        if (reponse === "oui" ){
+            console.log("patate");
+        } else if (reponse==="non") {
+            console.log("Quel dommage ! ");
+        } else{
+            console.log("Je vous sens indécis")
+            
+        }
+    </script>
+    
+    
+</body>
+
+</html>

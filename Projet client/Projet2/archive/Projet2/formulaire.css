@@ -1,0 +1,106 @@
+
+/*CSS formulaire*/
+
+
+body{
+	font-size: 62.5%
+}
+.contact{
+background-color: #fffd54ff;
+}
+
+form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0 5% 0 5%;
+}
+
+.titre {
+    border: solid #0025f5;
+    background-color: white;
+    font-size: 2.5rem;
+    margin: 1rem 0 0.25rem 0;
+    text-align: center;
+    flex: 1;
+    color: red;
+}
+
+input {
+    padding: 1rem;
+    color: white;
+    background-color: #0025f5;
+    border: solid #0025f5;
+    margin: 0.3rem 0 0.3rem 0;
+        border-radius: 0.4rem;
+
+}
+
+input:invalid {
+border: 1px solid #ff0000;
+}
+
+input[type=submit] {
+    background-color: white;
+    padding: 1rem 1rem 1rem 0rem;
+    color:#ff0000;
+}
+
+input[type=submit]:hover{
+    background-color:#0025f5; 
+    color: white;
+    border:solid #ff0000 ;
+
+}
+
+textarea {
+    border: solid #ff0000;
+    border-radius: 4px;
+    margin: 0.25rem 0 0.25rem 0;
+    flex: 1;
+    font-size: 1em;
+padding: 0;
+    resize: none;
+    height: 4rem;
+  }
+
+
+::-webkit-input-placeholder{  /* Chrome/Opera/Safari */
+  color: white;
+  font-size :1.5rem;
+
+}
+
+:-moz-placeholder{
+
+  color: white;
+  font-size :1.5rem;
+
+}
+
+.message::-webkit-input-placeholder {  /*Chrome/Opera/Safari */
+ color:#ff0000;
+ font-size :1rem;	
+
+}
+.message::-moz-placeholder {  /*Chrome/Opera/Safari */
+ color:#ff0000;
+ font-size :0.7rem;	
+
+}
+
+@media screen and (min-width:800px){
+form {
+
+    margin: 0 30% 0 30%;
+}
+}
+
+
+@media screen and (min-width:900px){
+input{
+    background-color: #0025f5;
+    flex: 1;
+
+}
+}

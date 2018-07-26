@@ -1,0 +1,65 @@
+le port est dans le dossier www
+
+quand on génère le site avec express generator, le site est déjà opé
+
+express est une surcouche, une bibliotèque de node.(node permet d'exécuter du javascript)
+
+
+dans app.js ; il y a l'appelle de toutes les sous catégories de nos fonctions. si je crééer un fichier dans /routes. je dois créer => var blogRouter=require(./routes/blog)
+
+toujours dans app.js app.use('/blog',blogRouter)
+
+====>lorsque je définis une nouvelle route dans mon dossier route/noulle.js
+
+Ensuite je crééer les chemins dans app.js
+
+(2 choses à faire)
+
+Dans routes/noulle.js
+
+j'initie const express=requite('express');
+const router=express.Router();
+
+(4actions sur une route=>la crééer, la mettre à jour, la supprimer, et post)
+
+router.get();
+router.post();
+router.put();
+router.delete();
+
+exemple :
+
+router.get('/',(req,res)=>{
+	res.send('/blog/");
+
+});
+
+mode.exports=router; <= on exporte cet objet dans notre routes/noulles.js pour utiliser le module.
+
+=> res.send = renvoie une chaine de caractère
+res.render =envoie vers views;
+res.status= renvoie un status
+res.json = on verra plus tard.
+GET => est une requête ajax. Donc asynchrone.
+
+GET est plus sécurisé que POST. On peut faire la même chose entre get et post. Par contre post ne fait pas ce que post.
+
+query body param permet de customiser notre url. 
+
+On a accés au body avec put et delete et post ( il n'y a que get qui modifie pas le body)
+
+//////////////:***********pour accéder à une base de donnée :**************/////////////////////// 
+
+var db=require('chemin');
+
+router.get('/',function(req,res){
+let users=[]
+;
+db.each("SELECT*FROM student",(err,row)=>{
+console.log(row);
+};()=>res.json(users));
+});
+
+
+
+

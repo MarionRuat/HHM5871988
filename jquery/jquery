@@ -1,0 +1,50 @@
+jQuery est une librairie JavaScript open source écrite en JavaScript, qui permet de manipuler le DOM (Document Object Model).
+
+On peut aussi : utiliser des framework type Angular, ReactJS ou ViewJS.
+
+DOM : 
+
+DOM est un standard du W3C : comment manipuler un document HTML avec un langage de programmation.
+
+Depuis un CDN de type Google
+
+ Performances au chargement
+
+1)Charger les librairies jquery 
+
+Pour des questions de performance, Google Code et Yahoo Developer Network : Exceptional Performance recommandent :
+
+    de placer les appels aux librairies en fin de page avant </body>
+    de placer les appels aux feuilles de style CSS avant, dans la section <head> grâce au tag link
+    de combiner au maximum les fichiers JavaScript/CSS, de les compresser/minifier et de les externaliser (c'est à dire les placer chacun dans un fichier externe à la page et non en ligne avec toutes leurs instructions dans le code html)
+
+
+Exemple : 
+
+<!doctype html>
+<html>
+
+  <head>
+     <title>Titre de la page</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+     ...
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <script src="mon_script.js"></script>
+  </body>
+
+</html>
+
+2) Placer votre propre fichiers JavaScript ou vos déclarations à la suite de cet appel, dans mon_script.js.
+
+3) placer vos instructions dans un fichier externe (*.js), plus facile à maintenir et à inclure sur un groupe de pages de votre site, avec le petit inconvénient d'effectuer une requête HTTP en plus.
+
+4) déclarer l'exécution du code au chargement de la page : 
+
+ exécuter le code au chargement de la page, grâce à la fonction ready() appliquée à l'objet document. C'est-à-dire lorsque les objets de la page seront prêts à être manipulés par JavaScript.
+
+jQuery(document).ready(function($) {
+   // Votre code ici avec les appels à la fonction $()
+});

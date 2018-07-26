@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Document</title>
+
+</head>
+
+<body>
+<script>
+class pokemon{
+constructor(nom, type, taille , nbPV, attaque,name,puissance){
+	this.nom= nom;
+	this.type= type;
+	this.taille= taille;
+	this.nbPV= nbPV;
+	this.attaque ={
+		name : name,
+		puissance:puissance
+	}
+}
+
+bim(arg){
+	console.log(`${this.nom} attaque ${arg.name}. Il inflige ${this.nbPV} dégats.`);
+}
+degat(victime) {
+	victime.nbPV=victime.nbPV - this.attaque.puissance
+		if (victime.nbPV>0){
+			console.log(`Il reste ${victime.nbPV} points de vie à mon ${victime.nom}.`);
+		}
+		else{
+			console.log(`${victime.nom} est K.O. `);
+		}
+}
+
+parler() {
+console.log(`Je suis ${this.nom} de type ${this.type}, je mesure ${this.taille} et je possède actuellement ${this.nbPV} points de vie.`);
+}
+}
+
+
+
+const p1 = new pokemon("Bulbizarre", "Plante", 170, 10,"attaque", "Fouet Liane",8);
+const p2 = new pokemon ("Pikachu","Electrique", 160, 15,"attaque","Vie-Attaque",7);
+
+p1.bim(p2);
+
+p1.degat(p2);	
+p1.degat(p2);
+p1.parler();
+p2.parler();
+p2.degat(p1);
+p2.degat(p1);
+p1.parler();
+	
+	</script>	
+	
+
+</body>
+
+</html>
+

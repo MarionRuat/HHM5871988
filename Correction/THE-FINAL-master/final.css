@@ -1,0 +1,203 @@
+/*FONT*/
+@font-face {
+    font-family: 'partybusiness';
+    src: url('partybusiness.ttf');
+}
+@font-face {
+    font-family: 'Sauron';
+    src: url('font1.ttf');
+}
+@font-face {
+    font-family: 'tnganbi';
+    src: url('tnganbi.ttf');
+}
+
+/*----INSIDE-----*/
+
+h3 {
+    font-size: 2.5em;
+}
+h2 {
+    font-family: Sauron;
+    font-size: 1.5em;
+    padding-top: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+h2:before, h2:after{
+  content: "ij";
+  font-family: 'tnganbi';
+  color:#fcc82a;
+  font-size: 20px;
+}
+h2:before{
+  float: left;
+  margin-right: 10px;
+
+}
+h2:after{
+  float: right;
+  margin-left: 10px;
+}
+body {
+    background-image: url("_bg_light.png");
+}
+ul,figure {
+    font-family:partybusiness;
+}
+
+.nav-pills .nav-item .nav-link{
+    font-family:Sauron;
+    color: #adadad;
+    margin: 10px 15px;
+}
+.nav-pills .nav-item .nav-link:hover{
+  color:#fcc82a;
+  border-bottom: 3px solid;
+}
+
+/*-----NAVBAR------*/
+
+.container nav {
+    display:flex;
+    flex-direction: row-reverse;
+
+}
+.navbar .nav-item {
+    border-right: 2px solid #fff;
+    padding: 0 5px;
+}
+.navbar .nav-link{
+    font-family: "Sauron";
+    font-size: 1em;
+}
+.navbar li :hover{
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+/*------CAROUSEL------*/
+
+.fix-center{
+    font-family: partybusiness;
+    color: #fff;
+    position: absolute;
+    bottom: 30%;
+}
+.fix-center h1 {
+    justify-content: center;
+    font-size: 4em;
+}
+.fix-center cite{
+  float:right; 
+}
+
+/*-------WANTED-----*/
+
+
+/*------FELLOWS-----*/
+
+.container .isibisi .wanted {
+    display: flex;
+    justify-content: center;
+}
+figcaption {
+    color: #fff
+}
+.isibisi {
+    position: relative;
+    background: url("_bg_dark.png");
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+figure.isibisi figcaption{
+  text-align: center;
+}
+.isibisi img{
+  background: #fff;
+  opacity: 0.5;
+  border-radius: 10px 10px 10px 10px;
+  transition:all 0.5s ease;
+}
+.isibisi:hover img{
+  opacity: 1;
+}
+.isibisi figcaption{
+  transition:transform 0.5s;
+  color: #fff;
+  font-size:2em;
+  position: relative;
+}
+.isibisi figcaption{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+.isibisi:hover figcaption{
+  font-size: 2em;
+}
+.isibisi .wanted p{
+  background-color:rgba(255,255,255, 0.6);
+  box-shadow: 0px 0px 5px 5px rgba(255,255,255, 0.6);
+  border-radius:10px;
+  padding:13px 0px;
+  width: 250px;
+  font-size: 30px;
+  transition:all 0.5s ease;
+}
+.isibisi .wanted p{
+  position: absolute;
+  opacity: 1;
+  top:20px;
+  transition:all 0.5s ease;
+}
+.isibisi:hover .wanted p{
+  opacity: 0;
+}
+.isibisi .done{
+  position: absolute;
+  font-size:2em;
+  color: #fcc82a;
+  top:60px;
+  width: 100%;
+  transition:all 0.5s ease;
+}
+.isibisi:hover .done{
+    opacity:0;
+}
+.isibisi .wanted p span{
+    color: #fcc82a;
+}
+.isibisi h4{
+  color:#adadad;
+  font-size: 30px;
+  padding: 5px;
+}
+.isibisi .toy{
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  width:140px;
+  height:5px;
+  border-radius: 10px;
+  background:#fcc82a;
+}
+.isibisi:hover .toy{
+  display: none;
+}
+.isibisi h3{
+  position: relative;
+  color: #fff;
+  font-size:2em;
+  margin-top: 60%;
+  transition: all transform 0.8s;
+}
+.isibisi:hover h3{
+  font-size: 1em;
+  top: 50px;
+}
+
+

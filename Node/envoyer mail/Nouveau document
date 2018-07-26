@@ -1,0 +1,63 @@
+Envoyer un mail avec NodeJS =>
+utiliser un serveur SMTP. 
+SMTP est un protocole de communication utilisé pour transférer le courrier éléctronique vers les serveurs de messagerie éléctronique
+
+Dans routes/index.js
+Si la messagerie ne permet joue pas le rôle de server, il faut utiliser un server SMTP.
+
+Etapes : 
+
+1)installation de Nodemailer => Nodemailer est un module de Noje.js facilitant l'envoie de mail.Nodemailer necessite d'avoir un serveur SMTP pour envoyer les messages. 
+
+	npm install --save nodemailer
+
+2) initialiser l'envoie de mail via :
+
+const nodemailer = require("nodemailer");
+
+// Création de la méthode de transport de l'email 
+var smtpTransport = nodemailer.createTransport({
+    host :"smtp.gmail.com",
+port:465,
+secure:true,
+    auth: {
+        user: "gmail.user@gmail.com", <= ici l'adresse mail de l'expéditeur (marionruat@gmail.com)
+        pass: "userpass" <= mot de passe de 'adresse mail
+    }
+});
+
+3) Ecrire le corps du message en html (marche aussi si la boite mail n'accepte pas d'afficher le html)
+
+smtpTransport.sendMail({
+    from: "Deer Wild <deer@wild.com>", // Expediteur
+    to: "contact@wild.com, contact@school.com", // Destinataires
+    subject: "Coucou !", // Sujet
+    text: "Hello world ✔", // plaintext body
+    html: "<b>Hello world ✔</b>" // html body
+}, (error, response) => {
+    if(error){
+        console.log(error);
+    }else{
+        console.log("Message sent: " + response.message);
+    }
+});
+
+4) Avoir un serveur SMTP : soit les boites emails proposent des serveurs SMTP. Ou passer par un services comme Mailjet,  Mailgun ou Sendgrid ( proposent d'avoir un serveur SMTP et de tracer si votre utilisateur à ouvert le mail)
+autre option : Mailtrap.ioethereal.email (créer de faux serveurs SMTP pour intercepter vos emails et vous permettre de debugger vos emails sans avoir à les envoyer à vos clients)
+
+exemple : avec ethereal.email
+
+// Generate SMTP service account from ethereal.email
+nodemailer.createTestAccount((err, account) => {
+    if (err) {
+        console.error('Failed to create a testing account. ' + err.message);
+        return process.exit(1);
+    }
+
+console.log('Credentials obtained, sending message...');
+
+
+
+
+
+

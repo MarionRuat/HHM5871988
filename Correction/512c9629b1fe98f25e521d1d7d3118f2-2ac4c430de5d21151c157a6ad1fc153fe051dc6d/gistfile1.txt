@@ -1,0 +1,21 @@
+/* mon.css */
+.Gris, .Noir, .Orange, .Jaune{
+border: solid grey 1px; }
+
+.Gris{
+background-color: rgb(55,55,55); padding-bottom: 8%;} 
+
+.Noir { 
+background-color: black; padding-bottom: 8%;}
+
+.Orange{ 
+background-color: #E65100; padding-bottom: 8%;}
+
+.Jaune{ 
+background-color: yellow; padding-bottom: 8%;}
+
+
+.row{
+min-width: 400px;
+margin-left: 10px;
+}

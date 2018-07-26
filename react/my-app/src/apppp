@@ -1,0 +1,54 @@
+
+
+
+// var mdpfort =  new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$","g");
+// var mdpmoyen= new RegExp ("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+// var mdpfaible = new RegExp("(?=.{6,}).*", "g");
+
+
+class Password extends Component{
+
+  constructor(props) {
+    super(props);
+    this.state = {
+    mdp:'password'
+    };
+  }
+
+function verification(){
+  if (/REGEX/.test('password')){
+    alert ("Mot de passe faible");
+  }else{ (/REGEX/.test('password')){
+    alert("Mot de passe fort");
+    }
+
+  render(){
+    return(
+      <div>
+        <form>
+          <label>
+            Password :
+            <input type="text" id ="password" name="name" onkeyup="verification()" />
+          </label>
+      <br/><br/>
+          <label>
+            Message :
+            <input type="text" id ="message" name="name" />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      )
+  }
+}
+
+class App extends Component{
+  render(){
+    return(
+      <div>
+        <Password/>
+      </div>
+    );
+  }
+}
